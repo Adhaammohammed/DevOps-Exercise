@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vote Results</title>
+</head>
+<body>
+    <h1>Vote Results</h1>
+    <ul>
+        {% for choice, count in result %}
+            <li>{{ choice }}: {{ count }} votes</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Back to Voting</a>
+</body>
+</html>
