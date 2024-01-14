@@ -8,9 +8,10 @@ def create_connection():
         host='db',
         port=5432,
         user='admin',
-        password='password',
+        password='password',  # Corrected this line
         database='voting_app'
     )
+   
 
 def initialize_database():
     with create_connection() as conn:
