@@ -9,7 +9,7 @@ services:
       - db
 
   db:
-    image: postgres:latest
+    image: postgres:13.4
     environment:
       POSTGRES_DB: voting_app
       POSTGRES_USER: admin
