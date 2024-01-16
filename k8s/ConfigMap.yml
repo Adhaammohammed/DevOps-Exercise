@@ -7,3 +7,4 @@ data:
   POSTGRES_DB: voting_app  # Adjust to your PostgreSQL database name
   POSTGRES_USER: admin    # Adjust to your PostgreSQL username
   POSTGRES_HOST: db  # Adjust to your PostgreSQL service name or IP address
+  POSTGRES_PASSWORD: passwrod 
