@@ -15,7 +15,7 @@ Access the Flask app by visiting the LoadBalancer IP or URL.
 
 1. **to mointor the state for your application**
 
-Create a Deployment file with two replicas of pods and with imaage "adhaammohammed/vote-task"
+Create a Deployment with two replicas of pods with image "adhaammohammed/vote-task"
 
 To Apply the Deployment:
 
