@@ -1,6 +1,6 @@
 ## Description
 
-> This repository contains a Flask web application that provides user voting on dogs and cats. The application is containerized using Docker, and it can be tested with a PostgreSQL database using Docker Compose.
+> This repository contains a Flask web application that provides user voting on dogs or cats. The application is containerized using Docker, and it can be tested with a PostgreSQL database using Docker Compose.
 
 ## Prerequisites
 
@@ -35,4 +35,15 @@ docker-compose build
 docker-compose up
 ```
 Access the application in your browser at http://localhost:5005 or 0.0.0.0:5005.
+
+
+## Paths
+
+### Displays a voting page to vote on cats or dogs.
+
+<img src="https://github.com/Adhaammohammed/DevOps-Exercise/assets/147430078/a3e37019-c9b0-414c-b56a-662f57929cec.png" width="500">
+
+## Result
+After you vote and clicking on vote button you will show the number of votes of cats and dogs
+
 
