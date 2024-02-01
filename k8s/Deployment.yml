@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: web-app-deplo
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: web-app-deplo
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: web-app
-          image: adhaammohammed/vote-app
+          image: "adhaammohammed/vote-app"
           ports:
             - containerPort: 5000
           resources:
@@ -25,28 +25,14 @@ spec:
               cpu: "0.1"
               memory: "128Mi"
           env:
-
-            - name: POSTGRES_DB
-              valueFrom:
-                configMapKeyRef:
-                  name: voting_app
-                  key: POSTGRES_DB
-                  
-            - name: POSTGRES_HOST
-              valueFrom: 
-                configMapKeyRef:
-                  name: db
-                  key: POSTGRES_HOST
-           
-            - name: POSTGRES_USER  
+            - name: POSTGRES_USER  # Adjust for PostgreSQL
               valueFrom:
                 secretKeyRef:
-                  name: admin
+                  name: secrets
                   key: POSTGRES_USER
-            
-            - name: POSTGRES_PASSWORD  
+            - name: POSTGRES_PASSWORD  # Adjust for PostgreSQL
               valueFrom:
                 secretKeyRef:
-                  name: password
+                  name: secrets
                   key: POSTGRES_PASSWORD
     
