@@ -46,4 +46,6 @@ Access the application in your browser at http://localhost:5005 or 0.0.0.0:5005.
 ## Result
 After you vote and clicking on vote button you will show the number of votes of cats and dogs
 
+<img src="https://github.com/Adhaammohammed/DevOps-Exercise/assets/147430078/8f1b5067-520b-43c5-8781-73517bd87e4d.png" width="500">
+
 
